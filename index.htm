@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenXbio: Escapa del Estrés</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="startGame()">
+<div class="game-container">
+<canvas id="gameCanvas" width="800" height="480"></canvas>
+<div class="ui">
+<div class="energy-bar">
+<label for="energy">Energía:</label>
+<progress id="energy" value="100" max="100"></progress>
+<span id="energy-value">100%</span>
+</div>
+<div class="score">
+Puntuación: <span id="score-value">0</span>
+</div>
+</div>
+<div class="game-over" id="gameOverScreen" style="display: none;">
+<h2>¡Fin del Juego!</h2>
+<p>Tu puntuación final: <span id="final-score"></span></p>
+<button id="restartButton">Jugar de Nuevo</button>
+<p class="cta">¿Te sientes estresado? Prueba <a href="#" target="_blank">Z-pro de GenXbio</a>.</p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

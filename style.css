@@ -1,0 +1,113 @@
+/* style.css */
+
+body {
+font-family: sans-serif;
+margin: 0;
+background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.game-container {
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#gameCanvas {
+border: 1px solid #000;
+background-color: #e0f7fa; /* Un color celeste claro para el fondo del juego */
+margin-bottom: 10px;
+}
+
+.ui {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.energy-bar {
+display: flex;
+align-items: center;
+}
+
+.energy-bar label {
+margin-right: 5px;
+}
+
+.energy-bar progress {
+width: 150px;
+height: 15px;
+}
+
+.score {
+font-weight: bold;
+}
+
+.game-over {
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-top: 20px;
+}
+
+.game-over h2 {
+margin-top: 0;
+color: #e74c3c; /* Un color rojo para el título de fin de juego */
+}
+
+.game-over button {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #3498db; /* Un color azul para el botón */
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.game-over button:hover {
+background-color: #2980b9;
+}
+
+.game-over .cta {
+margin-top: 15px;
+font-size: 0.9em;
+color: #777;
+}
+
+/* Ocultar inicialmente la barra de progreso de energía en navegadores más antiguos */
+progress {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border: none;
+background-color: #ddd;
+border-radius: 3px;
+}
+
+progress::-webkit-progress-bar {
+background-color: #ddd;
+border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+background-color: #5cb85c; /* Un color verde para la barra de energía llena */
+border-radius: 3px;
+}
+
+progress::-moz-progress-bar {
+background-color: #5cb85c;
+border-radius: 3px;
+}
